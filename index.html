@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golden Years Care – Donate</title>
+
+  <meta name="description" content="Support our old age home. Donate to provide care, dignity, and love to seniors." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #b45309; /* warm amber */
+      --secondary: #065f46; /* calm green */
+      --light: #fffaf0;
+      --dark: #2a1f14;
+      --muted: #6b5e54;
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #fde68a, #fef3c7);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 5rem 2rem;
+      background: linear-gradient(180deg, #fef3c7, #fffaf0);
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.9rem 2rem;
+      border-radius: var(--radius);
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background: #92400e;
+      transform: translateY(-2px);
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 280px;
+      border-radius: var(--radius);
+      background: url('https://images.unsplash.com/photo-1520975922284-8b456906c813') center/cover no-repeat;
+    }
+
+    /* Sections */
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+
+    section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      color: var(--secondary);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-bottom: 0.8rem;
+      color: var(--primary);
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* Donation */
+    .donation {
+      background: linear-gradient(135deg, #ecfeff, #f0fdf4);
+      border-radius: var(--radius);
+      padding: 3rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .donation-box {
+      background: white;
+      padding: 2rem;
+      border-radius: var(--radius);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .donation-box h3 {
+      margin-bottom: 1rem;
+      color: var(--secondary);
+    }
+
+    .amounts button {
+      margin: 0.3rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      background: #fff;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .amounts button:hover {
+      background: #fef3c7;
+    }
+
+    .donation-box input {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.8rem;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .donation-box button.submit {
+      margin-top: 1.2rem;
+      width: 100%;
+      padding: 0.9rem;
+      border: none;
+      border-radius: var(--radius);
+      background: var(--secondary);
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .donation-box button.submit:hover {
+      background: #047857;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #fff7ed;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">Golden Years Care</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#impact">Our Impact</a>
+      <a href="#donate">Donate</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <h1>Give Them Comfort, Care & Dignity</h1>
+      <p>Your donation helps us provide food, medical care, shelter, and love to elderly residents who deserve a peaceful life.</p>
+      <a href="#donate" class="btn">Donate Now</a>
+    </div>
+    <div class="hero-img"></div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Our Home</h2>
+  <p style="max-width:800px;color:#6b5e54;">Golden Years Care is a non-profit old age home dedicated to supporting seniors who have no family or resources. We focus on compassion, safety, and emotional well-being.</p>
+</section>
+
+<section id="impact">
+  <h2>Your Impact</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>🍲 Daily Meals</h3>
+      <p>Your support ensures nutritious meals for our residents every day.</p>
+    </div>
+    <div class="card">
+      <h3>🏥 Medical Care</h3>
+      <p>We provide regular checkups, medication, and emergency care.</p>
+    </div>
+    <div class="card">
+      <h3>❤️ Emotional Support</h3>
+      <p>Loneliness is reduced through companionship and activities.</p>
+    </div>
+  </div>
+</section>
+
+<section id="donate">
+  <div class="donation">
+    <div>
+      <h2>Make a Donation</h2>
+      <p style="color:#065f46;">Every contribution, big or small, changes a life.</p>
+    </div>
+    <div class="donation-box">
+      <h3>Select Amount</h3>
+      <div class="amounts">
+        <button>R100</button>
+        <button>R250</button>
+        <button>R500</button>
+        <button>R1000</button>
+      </div>
+      <input type="number" placeholder="Custom amount" />
+      <button class="submit" onclick="alert('Thank you for your kindness!')">Donate Securely</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Golden Years Care · Thank you for supporting our elders
+</footer>
+
+</body>
+</html>
